@@ -60,15 +60,18 @@
                 .list-unstyled2{
                     gap: 10px;
                     display: flex;
-                    flex-flow: row wrap;
+                    flex-flow: column ;
                     justify-content: center;
                     /* background-color: red; */
                     .li{
                         display: flex;
                         flex: 100px;
                         justify-content: center;
+                        align-items: center;
                         /* background-color: yellow; */
                         gap: 40px;
+
+                        justify-content: center;
                     }
 
                     .i{
@@ -171,6 +174,14 @@
         
     }
     }
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 

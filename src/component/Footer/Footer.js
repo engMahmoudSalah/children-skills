@@ -51,21 +51,20 @@ const Footer = () => {
                   <i className="fa fa-facebook i"></i>
                 </a>
               </li>
-              <li className="li">
+              {/* <li className="li">
                 <a href="#">
                   <i className="fa fa-twitter i"></i>
                 </a>
-              </li>
-              <li className="li">
+              </li> */}
+              {/* <li className="li">
                 <a href="#">
                   <i className="fa fa-instagram i"></i>
                 </a>
-              </li>
-
-              <li>
-                <img height={90} src={img1} />
+              </li> */}
+              <li className="li">
+                <img className="img" height={90} src={img1} />
                 &nbsp;&nbsp;
-                <img height={90} src={img2} />
+                <img className="img" height={90} src={img2} />
               </li>
             </div>
           </div>
