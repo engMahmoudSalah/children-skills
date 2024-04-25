@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'cairo' ;
+    src: url(../src/component/fonts/Cairo-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'ar1' ;
+    src: url(../src/component/fonts/Cairo-Medium.ttf);
+    
+}
+
+@font-face {
+    font-family: 'lemon' ;
+    src: url(../src/component/fonts/lemon_milk/LEMONMILK-Regular.otf);
+}
+
+*{
+    font-family: 'cairo';
+}
+
+/* buttons */
+
+button{
+    cursor: pointer;
+    height: 45px;
+    width: 160px;
+    border-radius: 20px;
+    transition: .2s ease-in-out;
+    border: none;  
+}
+
+button:hover{
+    box-shadow: 0px 0px 10px var(--btn-shadow);
+    
+}
+
+
+
+
+
+  

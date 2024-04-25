@@ -1,0 +1,262 @@
+.VideosTabs{
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: gold; */
+    gap: 20px;
+
+
+    .d-tabs{
+        position: relative;
+        display: flex;
+        justify-content: start;
+
+        flex: 1 0 200px;
+        /* background-color: rebeccapurple; */
+        
+        
+        .tabs {
+            display: flex;
+            flex-flow: column;
+            width: 100%;
+            background-color: var(--bg-second);
+            padding: 10px 10px;
+            gap: 20px;
+    
+    
+            .tab {
+                /* background-color: #292929; */
+                border-bottom: 1px solid gray;
+              padding: 10px 30px;
+              /* margin-right: 10px; */
+              color: var(--c22);
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+            }
+    
+            .tab:hover {
+              background-color:var(--bg-second-reverce) ;
+              color: var(--wb);
+            }
+
+            .tab.active{
+              background-color: var(--bg-second-reverce);
+              color: var(--wb);
+            }
+
+            .tab:last-child{
+              /* border: none; */
+            }
+            
+          }
+    }
+    
+    
+    
+      .tab-content {
+        /* background-color: #ecf0f1; */
+        border-right: 1px solid gray;
+        flex: 5 1 400px;
+        display: none;
+        padding:0px 20px 0px 20px ;
+        animation: slideIn 0.5s ease-in-out;
+
+        .text{
+            color: var(--main-main);
+        }
+
+        .videos{
+            /* background-color: rgb(86, 75, 15); */
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: start;
+            gap: 50px;
+            padding-top: 50px;
+
+            .d-video{
+              /* background-color: red; */
+                flex: 0 1 300px;
+                border-radius: 10px;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                gap: 5px;
+                padding: 4px;
+                box-sizing: border-box;
+                transition: .2s ease-in-out;
+                cursor: pointer;
+                position: relative;
+                
+                
+                
+                .d-img{
+                    /* background-color: gold; */
+                    overflow: hidden;
+                    border-radius: 10px;
+                    height: 280px;
+                    width: 100%;
+                    position: relative;
+                    margin-bottom: 10px;
+
+                    .img{
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .audio{
+                      background-color: rgba(255, 255, 255, 0.2) ;
+                      backdrop-filter: blur(8px);
+                      position: absolute;
+                      display: none;
+                      z-index: 99;
+                      height: 35px;
+                      margin: 0px;
+                      border-radius: 0px;
+                      bottom:0px ;
+                      width: 100%;
+                    }
+                    
+                }
+
+                .h5{
+                    margin: 0px;
+                    padding: 0px;
+                    color: var(--bg-second-reverce);
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                .h4{
+                    color: gray;
+                }
+
+
+            }
+
+            .d-video:hover .d-img .audio{
+              display: block;
+            }
+
+
+            .d-video:hover{
+                background-color: var(--bg-second);
+            }
+        }
+      }
+    
+      .tab-content.active {
+        display: block;
+        
+      }
+}
+
+
+
+
+/* Style the play/pause button */
+.audio::-webkit-media-controls-play-button {
+  border-radius: 50%;
+}
+
+.audio::-webkit-media-controls-play-button:hover{
+  background-color: var(--bg-second-reverce);
+}
+
+
+/* Style the volume control */
+.audio::-webkit-media-controls-volume-slider {
+
+}
+/* Customize progress bar */
+.audio::-webkit-media-controls-enclosure {
+background-color: transparent;
+}
+
+.audio::-webkit-media-controls-panel {
+background-color: transparent;
+}
+
+
+
+/* Style the current time and duration */
+.audio::-webkit-media-controls-current-time-display,
+.audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
+  @media screen and (max-width:768px) {
+  
+  .VideosTabs{
+
+    .tab-content {
+      .videos{
+        .d-video{
+
+          flex: 1 1 auto;
+          
+          .d-img{
+            /* height: 380px; */
+          }
+
+        }
+      }
+    }
+  } 
+}
+
+
+
+
+
+.audio-player {
+  max-width: 400px;
+  margin: 0 auto;
+  }
+  
+
+  @media screen and (max-width:550px) {
+    .VideosTabs{
+
+      .d-tabs{
+        .tabs {
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+  
+          }
+  
+      }
+    }
+  }
+  

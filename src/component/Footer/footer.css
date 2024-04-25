@@ -1,0 +1,192 @@
+.Footer {
+    /* background-image: linear-gradient(#0D1115,rgb(0, 0, 0)); */
+    position: relative;
+    color: var(--c22);
+    padding: 40px 40px 0px 40px; 
+    /* border-top: 1px solid gray;     */
+    /* background-color: red; */
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    overflow: hidden;
+    margin: 40px 0px 0px 0px;
+
+
+    .container{
+        display: flex;
+        /* background-color: gold; */
+        justify-content: center;
+        flex-flow: column;
+        
+        .column1{
+            display: flex;
+            flex-flow: row wrap;
+            /* background-color: #29C5F6; */
+            /* gap: 30px; */
+            justify-content: center;
+            /* align-items: center; */
+
+            .col-md-4{
+                flex-flow: column;
+                /* background-color: violet; */
+                justify-content: start;
+                display: flex;
+                /* align-items: center; */
+                flex: 1 1 200px;
+
+                .h4{
+                    text-align: center;
+                }
+                
+                .list-unstyled1{
+                    gap: 20px;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: center;
+                    text-align: center;
+                    /* background-color: red; */
+                    .li{
+                        /* background-color: yellow; */
+                        display: flex;
+                        justify-content: center;
+                        gap: 20px;
+                    }
+
+                    .i{
+                        font-size: 16px;
+                    }
+                }
+
+                .list-unstyled2{
+                    gap: 10px;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    /* background-color: red; */
+                    .li{
+                        display: flex;
+                        flex: 100px;
+                        justify-content: center;
+                        /* background-color: yellow; */
+                        gap: 40px;
+                    }
+
+                    .i{
+                        padding: 10px;
+                        font-size: 20px;
+                        /* background-color: white; */
+                        height: 45px;                        
+                        width: 45px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 10px;
+                        color: var(--c22);
+                        transition: .3s;
+
+                    }
+
+                    .i:hover{
+                        background-color: var(--main-main);
+
+                    }
+                }
+
+            }
+        }
+
+        .column2{
+            /* padding-top: 20px; */
+            margin-top: 20px;
+            border-top: 1px gray  solid;
+        }
+    }
+
+
+    .h4 {
+        color: #008080;
+        font-size: 18px;
+        margin: 20px 0px;
+    }
+
+
+
+
+
+    /* rays */
+
+    .Rays{
+
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        z-index: -1;
+        overflow: hidden;
+
+        .jumbo {
+            
+            /* background-image: var(--stripes), var(--rainbow); */
+            background-image: var(--stripesDark), var(--rainbow);
+    
+            mask-image: radial-gradient(ellipse at 0% 100%, black 40%, transparent 70%);
+
+        
+        
+        }
+    }
+    
+    /* end rays */
+
+   
+}
+
+@media screen and (max-width: 768px){
+    .Footer{
+        
+    .Rays{
+
+
+
+        position: absolute;
+        overflow: hidden;
+        /* bottom: -10000px; */
+
+        .all-bg{
+            height: 100%;
+            width: 100%;
+
+            .container-jumbo{
+                height: 100%;
+                .jumbo {
+                    height:100% ;
+                    /* background-image: var(--stripes), var(--rainbow); */
+                    background-image: var(--stripesDark), var(--rainbow);
+                    mask-image: radial-gradient(ellipse at 0% 100%, black 40%, transparent 70%);
+                
+                }
+            }
+
+        }
+        
+    }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.bottom-footer {
+    /* background-color: red; */
+    padding: 20px 0;
+    color: var(--main-main);
+}
+
+

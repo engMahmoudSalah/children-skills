@@ -1,0 +1,61 @@
+
+
+
+.bg-body-trasparent{
+    backdrop-filter: blur(8px) !important;
+    background-color:transparent ;
+    position: fixed;
+    z-index: 99;
+    width: 95%;
+    left: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 15px;
+    padding-inline: 10px;
+    
+    .d-logo{
+        display: flex;
+    }
+    
+}
+
+.navbar-toggler-icon{
+    background-image: url(../img/Picsart_24-03-29_17-27-15-504.png);
+    
+}
+
+
+
+
+.nav-link{
+    color: var(--color-gray);
+padding: 5px 20px !important;
+}
+
+
+
+.navbar-toggler:hover{
+    box-shadow: none;
+    border: none;
+    
+}
+
+
+.navbar-toggler{
+    width: 50px;
+    /* padding: .5px 10px; */
+}
+
+.navbar-toggler-icon{
+    width: 1.8rem;
+}
+
+.d-dark-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    min-width: 100px;
+}
+
+

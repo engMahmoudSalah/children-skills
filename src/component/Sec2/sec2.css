@@ -1,0 +1,58 @@
+.Page2{
+    display: block;
+    flex-flow: column;
+
+    .Space{
+        background-color: var(--bg-second);  
+        height: 80px;
+
+    }
+
+
+    .Header{
+
+        background-color: var(--bg-second);
+        border-bottom: 1px solid gray;
+        padding:  40px 0px;
+        
+        
+        .shape{
+            display: none;
+        }
+        
+        .container{
+            width: 95%;
+            /* margin: auto; */
+            align-items: start;
+            text-align: start;
+            /* background-color: red; */
+            padding: 0px;
+        }
+    }
+
+    .Footer{
+        /* background-color: #0a0d10; */
+        border-top: none;
+        
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .Page2{
+
+    
+        .Header{
+    
+
+            
+            .container{
+                width: 90%;
+            }
+        }
+    
+
+    }
+    
+}

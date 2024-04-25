@@ -1,0 +1,88 @@
+:root{
+
+
+    --stripes: repeating-linear-gradient(100deg,#fff 0%,#fff 7%,transparent 10%,transparent 12%,#fff 16%);
+    --stripesDark: repeating-linear-gradient(100deg,#000 0%,#000 7%,transparent 10%,transparent 12%,#000 16%);
+    --rainbow: repeating-linear-gradient(100deg,#60a5fa 10%,#e879f9 15%,#60a5fa 20%,#5eead4 25%,#60a5fa 30%);
+    --ray:var(--stripes), var(--rainbow);
+        
+
+    --bg-all:rgb(229,243,246);
+    --c11: #fff;
+    --c22: rgb(69,78,87);
+    --wb:white;
+    --bg-second:rgb(207, 226, 233);
+    --bg-second-reverce:#0a0d10;
+    --h-shadow:transparet;
+    --item-shadow:rgb(213, 213, 213);
+    --btn-shadow:rgba(255, 255, 255);
+    --bg-obacity:rgb(0, 0, 0,.1);
+    --t-dl:#0a0d10;
+    --c33:rgb(69,78,87);
+    --main-main:#29C5F6;
+    
+}
+
+
+
+.dark-theme-variables{
+    --ray:var(--stripesDark), var(--rainbow);
+    --bg-all:rgb(13, 17, 21);
+    --c11: #922;
+    --c22: white;
+    --wb:black;
+    --bg-second:#0a0d10;
+    --bg-second-reverce:lightblue;
+    --h-shadow:#29C5F6;
+    --item-shadow:rgba(0, 0, 0, 1);
+    --btn-shadow:rgba(59, 59, 59, 1);
+    --bg-obacity:rgb(255, 255, 255,.1);
+    --t-dl:#ACC5C8;
+    --c33:#B7B7B7;
+    --main-main:#29C5F6;
+
+
+    /* ===[imgs]=== */
+    /* --img-img1:url(/src/component/img/imgSvg2.svg); */
+
+}
+
+
+
+
+
+
+
+
+
+
+.theme-toggler{
+    background: var(--bg-second);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width:80px;
+    cursor: pointer;
+    border-radius: 20px;
+
+
+}
+
+.theme-toggler i{
+    font-size: 1rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+
+}
+
+.theme-toggler i.active{
+    background: #29c6f639;
+    color: white;
+    border-radius: 20px;
+
+}

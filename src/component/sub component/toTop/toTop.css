@@ -1,0 +1,26 @@
+.ToTop{
+    height: 45px;
+    width: 45px;
+    background-color: var(--bg-second-reverce);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px var(--btn-shadow) ;
+    transition: .2s ease;
+    
+    
+    .i{
+        color: var(--bg-second);
+    }
+    
+}
+
+.ToTop:hover{
+    box-shadow: 0px 0px 10px var(--btn-shadow) ;
+
+}

@@ -1,0 +1,80 @@
+.Loading{
+
+position: absolute;
+    
+.div-shape1{
+    position: absolute;
+    height: 30px;
+    /* height: 300px; */
+    width: 70px;
+    background-color:var(--color-bg);
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    /* flex-flow: column; */
+    flex-flow: row ;
+    justify-content: center;
+    gap: 4px 4px;
+    align-content: center;
+    /* background-color: red; */
+    
+}
+
+.sh1-shapes{
+    height: 15px;
+    width: 5px;
+    background-color:#29C5F6;
+    border-radius: 2px;
+    animation: shape1 3s linear infinite ;
+}
+
+
+.div-shape1 div:nth-child(1){
+    animation-delay: 0s;
+
+}
+
+.div-shape1 div:nth-child(2){
+    animation-delay: .2s;
+
+}
+
+.div-shape1 div:nth-child(3){
+    animation-delay: .4s;
+
+}
+
+.div-shape1 div:nth-child(4){
+    animation-delay: .6s;
+
+}
+
+.div-shape1 div:nth-child(5){
+    animation-delay: .8s;
+
+}
+
+.div-shape1 div:nth-child(6){
+    animation-delay: 1s;
+
+}
+
+.div-shape1 div:nth-child(7){
+    animation-delay: 1.2s;
+
+}
+
+
+
+/* end shapes */
+}
+
+@keyframes shape1 {
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}

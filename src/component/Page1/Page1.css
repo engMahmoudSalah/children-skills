@@ -1,0 +1,85 @@
+.Page1{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    overflow: hidden;
+    /* padding-bottom: 200px; */
+    /* padding-top: 80px; */
+
+    /* rays */
+
+    .Rays{
+
+        position: absolute;
+        top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            z-index: -1;
+
+        .jumbo {
+            
+            /* background-image: var(--stripes), var(--rainbow); */
+            background-image: var(--ray);
+
+    
+            mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%);
+
+        
+        
+        }
+    }
+    
+    /* end rays */
+
+    & .section{
+        width: 95%;
+        margin:0px auto; 
+        
+    }
+
+    & .Grid{
+        position: absolute;
+        
+        
+    }
+
+
+    /* images */
+
+    &  .img1{
+        height: 1000px;
+        position: absolute;
+        right: -100px;
+        z-index: -1;
+    }
+    
+    
+    &  .img2{
+        height: 600px;
+        left: -30px;
+        top: -100px;
+        z-index: -1;
+        position: absolute;
+        z-index: -1;
+    }
+
+
+    
+
+
+
+}
+
+@keyframes img-animation {
+    0%{
+        transform: translatey(-3px);
+    }
+
+    100%{
+        transform: translatey(3px);
+    }
+}
+
+
