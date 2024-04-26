@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import './toTop.css'
-// import { FaArrowUp } from 'react-icons/fa'; 
+import React, { useState, useEffect } from "react";
+import "./toTop.css";
+// import { FaArrowUp } from 'react-icons/fa';
 
 const ToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,26 +14,25 @@ const ToTop = () => {
       }
     };
 
-    window.addEventListener('scroll', toggleVisibility);
+    window.addEventListener("scroll", toggleVisibility);
 
     return () => {
-      window.removeEventListener('scroll', toggleVisibility);
+      window.removeEventListener("scroll", toggleVisibility);
     };
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   return (
     <>
       {isVisible && (
-        <div data-aos='fade-left'
-         className="ToTop" onClick={scrollToTop}>
-                <i className="fa fa-chevron-up i"></i>
+        <div  className="ToTop" onClick={scrollToTop}>
+          <i className="fa fa-chevron-up i"></i>
         </div>
       )}
     </>

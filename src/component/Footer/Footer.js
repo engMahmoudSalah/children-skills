@@ -15,30 +15,27 @@ const Footer = () => {
             <h4 className="h4"> من نحن </h4>
             <div className="list-unstyled1">
               <p className="p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                commodo pretium nunc, ut commodo.
+                طلاب كلية العلوم جامعة الزقازيق
               </p>
-              <p className="p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                commodo pretium nunc, ut commodo.
-              </p>
-              <p className="p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                commodo pretium nunc, ut commodo.
-              </p>
+
+              <p className="p"> د/ مريم سالم {"  "}  . , .  {"  "} د/ الاء زكي</p>
+              <p className="p"> د/ رنا {"  "}  . , .  {"  "} د/ شيماء</p>
+              <p className="p"> د/ لسة اسم 😊 {"  "}  . , .  {"  "} د/ الاء</p>
+              
             </div>
           </div>
           <div className="col-md-4">
             <h4 className="h4"> اتصل بنا </h4>
             <div className="list-unstyled1">
-              <li className="li">
-                <i className="fa fa-envelope i"></i> mmss1001101@gmail.com
+              <li style={{textAlign:"right"}} className="li">
+                <i className="fa fa-envelope i"></i> science@zu.edu.eg
               </li>
-              <li className="li">
-                <i className="fa fa-phone i"></i> + 0102 242 0372{" "}
+              <li style={{direction:'ltr',textAlign:"right"}} className="li">
+              055 2303252{" "}
+                 <i className="fa fa-phone i"></i>
               </li>
-              <li className="li">
-                <i className="fa fa-map-marker i"></i> agazig university,
+              <li style={{textAlign:"right"}} className="li">
+                <i className="fa fa-map-marker i"></i> Zagazig university,
                 Egypt
               </li>
             </div>

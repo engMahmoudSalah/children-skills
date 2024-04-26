@@ -55,10 +55,14 @@
                     .i{
                         font-size: 16px;
                     }
+
+                    .p{
+                        margin-bottom: 0px;
+                    }
                 }
 
                 .list-unstyled2{
-                    gap: 10px;
+                    /* gap: 10px; */
                     display: flex;
                     flex-flow: column ;
                     justify-content: center;
