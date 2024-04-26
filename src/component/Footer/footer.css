@@ -1,5 +1,5 @@
 .Footer {
-    /* background-image: linear-gradient(#0D1115,rgb(0, 0, 0)); */
+    background-image: linear-gradient(var(--bg-all),var(--bg-second));
     position: relative;
     color: var(--c22);
     padding: 40px 40px 0px 40px; 
@@ -69,6 +69,11 @@
                         justify-content: center !important;
                         /* background-color: yellow; */
                         gap: 40px;
+                        width: 100%;
+                        
+                        a{
+                            height: 50px;
+                        }
 
 
                     }
@@ -85,11 +90,12 @@
                         border-radius: 10px;
                         color: var(--c22);
                         transition: .3s;
+                        /* width: 100%; */
 
                     }
 
                     .i:hover{
-                        background-color: var(--main-main);
+                        background-color: var(--bg-second);
 
                     }
                 }
