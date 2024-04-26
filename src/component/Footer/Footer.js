@@ -14,8 +14,8 @@ const Footer = () => {
           <div className="col-md-4">
             <h4 className="h4"> من نحن </h4>
             <div className="list-unstyled1">
-              <p className="p">
-                طلاب كلية العلوم جامعة الزقازيق
+              <p style={{direction:'ltr'}} className="p">
+              : طلاب كلية العلوم جامعة الزقازيق
               </p>
 
               <p className="p"> د/ مريم سالم {"  "}  . , .  {"  "} د/ الاء زكي</p>
