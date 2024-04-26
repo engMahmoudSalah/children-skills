@@ -1,6 +1,7 @@
 import React from 'react'
 import './sec2.css'
 import VideosTabs from '../VideosTabs/VideosTabs'
+import ToTop from '../sub component/toTop/ToTop'
 
 
 const Page2 = () => {

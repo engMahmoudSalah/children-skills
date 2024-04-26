@@ -47,7 +47,7 @@ const Footer = () => {
             <h4 className="h4"> تابعنا</h4>
             <div className="list-unstyled2">
               <li className="li">
-                <a href="#">
+                <a href="https://www.facebook.com/profile.php?id=100054362658684&locale=ar_AR">
                   <i className="fa fa-facebook i"></i>
                 </a>
               </li>

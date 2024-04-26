@@ -30,6 +30,7 @@
                 /* background-color: #292929; */
                 border-bottom: 1px solid gray;
               padding: 10px 30px;
+              
               /* margin-right: 10px; */
               color: var(--c22);
               cursor: pointer;
@@ -253,6 +254,11 @@ background-color: transparent;
             flex-flow: row wrap;
             justify-content: center;
             align-items: center;
+
+            .tab{
+              flex: 1 1 120px;
+              text-align: center;
+            }
   
           }
   
