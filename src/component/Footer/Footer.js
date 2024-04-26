@@ -7,7 +7,7 @@ import img2 from "../../img2/logo2.png";
 const Footer = () => {
   return (
     <footer className="Footer">
-      <Rays />
+      {/* <Rays /> */}
 
       <div className="container">
         <div className="column1">
