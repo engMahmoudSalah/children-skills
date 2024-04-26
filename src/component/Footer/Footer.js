@@ -27,14 +27,14 @@ const Footer = () => {
           <div className="col-md-4">
             <h4 className="h4"> اتصل بنا </h4>
             <div className="list-unstyled1">
-              <li style={{textAlign:"right"}} className="li">
+              <li  className="li">
                 <i className="fa fa-envelope i"></i> science@zu.edu.eg
               </li>
-              <li style={{direction:'ltr',textAlign:"right"}} className="li">
+              <li style={{direction:'ltr'}} className="li">
               055 2303252{" "}
                  <i className="fa fa-phone i"></i>
               </li>
-              <li style={{textAlign:"right"}} className="li">
+              <li className="li">
                 <i className="fa fa-map-marker i"></i> Zagazig university,
                 Egypt
               </li>
