@@ -67,11 +67,10 @@
                         display: flex;
                         flex: 100px;
                         justify-content: center;
-                        align-items: center;
                         /* background-color: yellow; */
                         gap: 40px;
 
-                        justify-content: center;
+
                     }
 
                     .i{
