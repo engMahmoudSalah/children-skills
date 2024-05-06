@@ -56,7 +56,7 @@ const M4 = ({tab}) => {
         {
           title: "9",
           img: require("../../maharat/دخول_الحمام/9/9.jpg"),
-          description: "البس ",
+          description: "ارفع البنطلون ",
           audio: require("../../maharat/دخول_الحمام/9/9.mp3"),
         },
         {

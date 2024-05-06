@@ -47,23 +47,46 @@ const M2 = ({tab}) => {
           description: " اغسل بوئي من المعجون ",
           audio: require("../../maharat/غسيل_الاسنان/7/AUD-20240421-WA0018.mp3"),
         },
+
         {
           title: '8',
+          img: require("../../maharat/غسيل_الاسنان/plus7/plus7.jpg"),
+          description: " انشف بوءي ",
+          audio: require("../../maharat/غسيل_الاسنان/plus7/plus7.mp3"),
+        },
+
+        {
+          title: '9',
           img: require("../../maharat/غسيل_الاسنان/8/8.jpg"),
           description: " اغسل فرشة الاسنان من المعجون ",
           audio: require("../../maharat/غسيل_الاسنان/8/AUD-20240421-WA0019.mp3"),
         },
+
         {
-          title: '9',
+          title: '10',
+          img: require("../../maharat/غسيل_الاسنان/plus8/plus8.jpg"),
+          description: " انشف ايدي ",
+          audio: require("../../maharat/غسيل_الاسنان/plus8/plus8.mp3"),
+        },
+
+        {
+          title: '11',
           img: require("../../maharat/غسيل_الاسنان/9/9.jpg"),
           description: " احط فرشة الاسنان مكانها ",
           audio: require("../../maharat/غسيل_الاسنان/9/AUD-20240421-WA0020.mp3"),
         },
         {
-          title: '10',
+          title: '12',
           img: require("../../maharat/غسيل_الاسنان/10/10.jpg"),
           description: "خلصت ... سناني نضيفة",
           audio: require("../../maharat/غسيل_الاسنان/10/AUD-20240421-WA0021.mp3"),
+        },
+
+        {
+          title: '13',
+          img: require("../../maharat/غسيل_الاسنان/plus10/plus10.jpg"),
+          description: " اخرج من الحمام ",
+          audio: require("../../maharat/غسيل_الاسنان/plus10/plus10.mp3"),
         },
 
       ];

@@ -5,35 +5,48 @@ const M8 = ({tab}) => {
     var tabs = tab;
 
     var tabs = [
+      {
+        title: '1',
+        img: require("../../maharat/الاكل/0/0.jpg"),
+        description: "اجيب الاكل من المطبخ",
+        audio: require("../../maharat/الاكل/0/0.mp3"),
+      },
         {
-          title: "1",
+          title: "2",
           img: require("../../maharat/الاكل/1/1.jpg"),
           description: "احط الاكل قدامي",
           audio: require("../../maharat/الاكل/1/AUD-20240421-WA0022.mp3"),
         },
         {
-          title: '2',
+          title: '3',
           img: require("../../maharat/الاكل/2/2.jpg"),
           description: "امسك المعلقة",
           audio: require("../../maharat/الاكل/2/AUD-20240421-WA0023.mp3"),
         },
         {
-          title: '3',
+          title: '4',
           img: require("../../maharat/الاكل/3/3.jpg"),
           description:"آكل",
           audio: require("../../maharat/الاكل/3/AUD-20240421-WA0024.mp3"),
         },
         {
-          title: '4',
+          title: '5',
           img: require("../../maharat/الاكل/4/4.jpg"),
           description: "خلصت اكل",
           audio: require("../../maharat/الاكل/4/AUD-20240421-WA0025.mp3"),
         },
         {
-          title: '5',
+          title: '6',
           img: require("../../maharat/الاكل/5/5.jpg"),
           description: "اشيل الطبق",
           audio: require("../../maharat/الاكل/5/AUD-20240421-WA0026.mp3"),
+        },
+
+        {
+          title: '7',
+          img: require("../../maharat/الاكل/6/6.jpg"),
+          description: " هحط الطبق في الحوض ",
+          audio: require("../../maharat/الاكل/6/6.mp3"),
         },
       ];
 
