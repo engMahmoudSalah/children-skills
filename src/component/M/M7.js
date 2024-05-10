@@ -8,19 +8,19 @@ const M7 = ({tab}) => {
         {
           title: "1",
           img: require("../../maharat/الاستحمام/1/1.jpg"),
-          description: " ادخل الحمام ",
+          description: " أدخل الحمام ",
           audio: require("../../maharat/الاستحمام/1/AUD-20240421-WA0046.mp3"),
         },
         {
           title: '2',
           img: require("../../maharat/الاستحمام/2/2.jpg"),
-          description: "اقفل الباب ورايا",
+          description: "أقفل الباب ورايا",
           audio: require("../../maharat/الاستحمام/2/AUD-20240421-WA0047.mp3"),
         },
         {
           title: '3',
           img: require("../../maharat/الاستحمام/3/3.jpg"),
-          description:" اقلع هدومي",
+          description:" أقلع هدومي",
           audio: require("../../maharat/الاستحمام/3/AUD-20240421-WA0048.mp3"),
         },
         {
@@ -32,7 +32,7 @@ const M7 = ({tab}) => {
         {
           title: "5",
           img: require("../../maharat/الاستحمام/5/5.jpg"),
-          description: "افتح الدش",
+          description: "أفتح الدش",
           audio: require("../../maharat/الاستحمام/5/AUD-20240421-WA0050.mp3"),
         },
 
@@ -40,28 +40,28 @@ const M7 = ({tab}) => {
         {
           title: "6",
           img: require("../../maharat/الاستحمام/plus5/plus5.jpg"),
-          description: "اجيب الشامبو",
+          description: "أجيب الشامبو",
           audio: require("../../maharat/الاستحمام/plus5/plus5.mp3"),
         },
 
         {
           title: "7",
           img: require("../../maharat/الاستحمام/plus5-1/plus5-1.jpg"),
-          description: "احط الشامبو علي شعري",
+          description: "أحط الشامبو علي شعري",
           audio: require("../../maharat/الاستحمام/plus5-1/plus5-1.mp3"),
         },
 
         {
           title: "8",
           img: require("../../maharat/الاستحمام/plus5-2/plus5-2.jpg"),
-          description: "اجيب الليفة",
+          description: "أجيب الليفة",
           audio: require("../../maharat/الاستحمام/plus5-2/plus5-2.mp3"),
         },
 
         {
           title: "9",
           img: require("../../maharat/الاستحمام/plus5-3/plus5-3.jpg"),
-          description: "احط الصابون علي الليفة",
+          description: "أحط الصابون علي الليفة",
           audio: require("../../maharat/الاستحمام/plus5-3/plus5-3.mp3"),
         },
 
@@ -70,19 +70,19 @@ const M7 = ({tab}) => {
         {
           title: '10',
           img: require("../../maharat/الاستحمام/6/6.jpg"),
-          description: "اغسل جسمي بالصابون",
+          description: "أغسل جسمي بالصابون",
           audio: require("../../maharat/الاستحمام/6/AUD-20240421-WA0051.mp3"),
         },
         {
           title: '11',
           img: require("../../maharat/الاستحمام/7/7.jpg"),
-          description:" اغسل جسمي بالمايه",
+          description:" أغسل جسمي بالمايه",
           audio: require("../../maharat/الاستحمام/7/AUD-20240421-WA0052.mp3"),
         },
         {
           title: '12',
           img: require("../../maharat/الاستحمام/8/8.jpg"),
-          description: "اقفل الدش",
+          description: "أقفل الدش",
           audio: require("../../maharat/الاستحمام/8/AUD-20240421-WA0053.mp3"),
         },
         {
@@ -94,19 +94,19 @@ const M7 = ({tab}) => {
         {
           title: '14',
           img: require("../../maharat/الاستحمام/10/10.jpg"),
-          description: "البس البرنص",
+          description: "ألبس البرنص",
           audio: require("../../maharat/الاستحمام/10/AUD-20240421-WA0055.mp3"),
         },
         {
           title: '15',
           img: require("../../maharat/الاستحمام/11/11.jpg"),
-          description:"انا خلصت ... استحميت",
+          description:"أنا خلصت ... استحميت",
           audio: require("../../maharat/الاستحمام/11/AUD-20240421-WA0056.mp3"),
         },
         {
           title: '16',
           img: require("../../maharat/الاستحمام/12/12.jpg"),
-          description: "اخرج من الحمام",
+          description: "أخرج من الحمام",
           audio: require("../../maharat/الاستحمام/12/AUD-20240421-WA0057.mp3"),
         },
       ];

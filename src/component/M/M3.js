@@ -15,19 +15,19 @@ const M3 = ({tab}) => {
         {
           title: "2",
           img: require("../../maharat/تسريح_الشعر/1/2.jpg"),
-          description: "اجيب المشط ",
+          description: "أجيب المشط ",
           audio: require("../../maharat/تسريح_الشعر/1/AUD-20240421-WA0042.mp3"),
         },
         {
           title: "3",
           img: require("../../maharat/تسريح_الشعر/2/2.jpg"),
-          description: "اسرح شعري ",
+          description: "أسرح شعري ",
           audio: require("../../maharat/تسريح_الشعر/2/AUD-20240421-WA0043.mp3"),
         },
         {
           title: "4",
           img: require("../../maharat/تسريح_الشعر/3/3.jpg"),
-          description: "احط المشط مكانه ",
+          description: "أحط المشط مكانه ",
           audio: require("../../maharat/تسريح_الشعر/3/AUD-20240421-WA0044.mp3"),
         },
         {

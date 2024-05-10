@@ -9,58 +9,58 @@ const M5 = ({tab}) => {
       {
         title: "1",
         img: require("../../maharat/لبس_التيشرت/0/0.jpg"),
-        description: " افتح الدولاب",
+        description: " أفتح الدولاب",
         audio: require("../../maharat/لبس_التيشرت/0/0.mp3"),
       },
 
         {
           title: "2",
           img: require("../../maharat/لبس_التيشرت/1/1.jpg"),
-          description: "اجيب التيشرت من الدولاب",
+          description: "أجيب التيشرت من الدولاب",
           audio: require("../../maharat/لبس_التيشرت/1/AUD-20240421-WA0034.mp3"),
         },
         {
           title: '3',
           img: require("../../maharat/لبس_التيشرت/2/2.jpg"),
-          description: "ادخل دراعي في الكم",
+          description: "أدخل دراعي في الكم",
           audio: require("../../maharat/لبس_التيشرت/2/AUD-20240421-WA0035.mp3"),
         },
         {
           title: '4',
           img: require("../../maharat/لبس_التيشرت/3/3.jpg"),
-          description:"ادخل دراعي التاني في الكم",
+          description:"أدخل دراعي التاني في الكم",
           audio: require("../../maharat/لبس_التيشرت/3/AUD-20240421-WA0036.mp3"),
         },
         {
           title: '5',
           img: require("../../maharat/لبس_التيشرت/4/4.jpg"),
-          description: "ادخل راسي",
+          description: "أدخل راسي",
           audio: require("../../maharat/لبس_التيشرت/4/AUD-20240421-WA0037.mp3"),
         },
         {
           title: "6",
           img: require("../../maharat/لبس_التيشرت/5/5.jpg"),
-          description: "افتح الدولاب",
+          description: "أفتح الدولاب",
           audio: require("../../maharat/لبس_التيشرت/5/5.mp3"),
         },
 
         {
           title: "7",
           img: require("../../maharat/لبس_التيشرت/plus5/plus5.jpg"),
-          description: "اجيب البنطلون",
+          description: "أجيب البنطلون",
           audio: require("../../maharat/لبس_التيشرت/plus5/plus5.mp3"),
         },
 
         {
           title: '8',
           img: require("../../maharat/لبس_التيشرت/6/6.jpg"),
-          description: "ادخل رجلي",
+          description: "أدخل رجلي",
           audio: require("../../maharat/لبس_التيشرت/6/AUD-20240421-WA0039.mp3"),
         },
         {
           title: '9',
           img: require("../../maharat/لبس_التيشرت/7/7.jpg"),
-          description:"ادخل رجلي التانية",
+          description:"أدخل رجلي التانية",
           audio: require("../../maharat/لبس_التيشرت/7/AUD-20240421-WA0040.mp3"),
         },
         {

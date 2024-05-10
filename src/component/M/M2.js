@@ -8,50 +8,50 @@ const M2 = ({tab}) => {
         {
           title: '1',
           img: require("../../maharat/غسيل_الاسنان/1/1.jpg"),
-          description: " ادخل الحمام",
+          description: " أدخل الحمام",
           audio: require("../../maharat/غسيل_الاسنان/1/AUD-20240421-WA0012.mp3"),
         },
         {
           title: '2',
           img: require("../../maharat/غسيل_الاسنان/2/2.jpg"),
-          description:"امسك فرشة الاسنان",
+          description:"أمسك فرشة الاسنان",
           audio: require("../../maharat/غسيل_الاسنان/2/AUD-20240421-WA0013.mp3"),
         },
         {
           title: '3',
           img: require("../../maharat/غسيل_الاسنان/3/3.jpg"),
-          description: "امسك المعجون",
+          description: "أمسك المعجون",
           audio: require("../../maharat/غسيل_الاسنان/3/AUD-20240421-WA0014.mp3"),
         },
         {
           title: '4',
           img: require("../../maharat/غسيل_الاسنان/4/4.jpg"),
-          description: " احط المعجون على فرشة الاسنان ",
+          description: " أحط المعجون على فرشة الاسنان ",
           audio: require("../../maharat/غسيل_الاسنان/4/AUD-20240421-WA0015.mp3"),
         },
         {
           title: '5',
           img: require("../../maharat/غسيل_الاسنان/5/5.jpg"),
-          description: " احط فرشة الاسنان على سناني ",
+          description: " أحط فرشة الاسنان على سناني ",
           audio: require("../../maharat/غسيل_الاسنان/5/AUD-20240421-WA0016.mp3"),
         },
         {
           title: '6',
           img: require("../../maharat/غسيل_الاسنان/6/6.jpg"),
-          description: " اغسل سناني ",
+          description: " أغسل سناني ",
           audio: require("../../maharat/غسيل_الاسنان/6/AUD-20240421-WA0017.mp3"),
         },
         {
           title: '7',
           img: require("../../maharat/غسيل_الاسنان/7/7.jpg"),
-          description: " اغسل بؤي من المعجون ",
+          description: " أغسل بؤي من المعجون ",
           audio: require("../../maharat/غسيل_الاسنان/7/AUD-20240421-WA0018.mp3"),
         },
 
         {
           title: '8',
           img: require("../../maharat/غسيل_الاسنان/plus7/plus7.jpg"),
-          description: " انشف بؤي ",
+          description: " أنشف بؤي ",
           audio: require("../../maharat/غسيل_الاسنان/plus7/plus7.mp3"),
         },
 

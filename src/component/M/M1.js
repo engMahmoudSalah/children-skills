@@ -8,19 +8,19 @@ const M1 = ({tab}) => {
         {
           title: "1",
           img: require("../../maharat/ترتيب_السرير/1/IMG-20240415-WA0078.jpg"),
-          description: "اقوم من النوم",
+          description: "أقوم من النوم",
           audio: require("../../maharat/ترتيب_السرير/1/AUD-20240421-WA0008.mp3"),
         },
         {
           title: '2',
           img: require("../../maharat/ترتيب_السرير/2/IMG-20240415-WA0079.jpg"),
-          description: "اشيل الغطا",
+          description: "أشيل الغطا",
           audio: require("../../maharat/ترتيب_السرير/2/AUD-20240421-WA0009.mp3"),
         },
         {
           title: '3',
           img: require("../../maharat/ترتيب_السرير/3/IMG-20240415-WA0081.jpg"),
-          description:"اطبق الغطا",
+          description:"أطبق الغطا",
           audio: require("../../maharat/ترتيب_السرير/3/AUD-20240421-WA0010.mp3"),
         },
         {

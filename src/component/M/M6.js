@@ -8,31 +8,31 @@ const M6 = ({tab}) => {
         {
           title: "1",
           img: require("../../maharat/لبس_الشراب/0/0.jpg"),
-          description: "افتح درج الشرابات",
+          description: "أفتح درج الشرابات",
           audio: require("../../maharat/لبس_الشراب/1/AUD-20240421-WA0027.mp3"),
         },
         {
           title: "2",
           img: require("../../maharat/لبس_الشراب/1/1.jpg"),
-          description: "اجيب الشراب",
+          description: "أجيب الشراب",
           audio: require("../../maharat/لبس_الشراب/1/AUD-20240421-WA0027.mp3"),
         },
         {
           title: '3',
           img: require("../../maharat/لبس_الشراب/2/2.jpg"),
-          description: "البس الشراب في رجلي",
+          description: "ألبس الشراب في رجلي",
           audio: require("../../maharat/لبس_الشراب/2/AUD-20240421-WA0028.mp3"),
         },
         {
           title: '4',
           img: require("../../maharat/لبس_الشراب/3/3.jpg"),
-          description:"البس الشراب في رجلي التانية",
+          description:"ألبس الشراب في رجلي التانية",
           audio: require("../../maharat/لبس_الشراب/3/AUD-20240421-WA0029.mp3"),
         },
         {
           title: '5',
           img: require("../../maharat/لبس_الشراب/55/55.jpg"),
-          description: "اجيب الجزمة",
+          description: "أجيب الجزمة",
           audio: require("../../maharat/لبس_الشراب/4/AUD-20240421-WA0030.mp3"),
         },
         {
