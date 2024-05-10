@@ -26,7 +26,7 @@ const M1 = ({tab}) => {
         {
           title: '4',
           img: require("../../maharat/ترتيب_السرير/4/IMG-20240416-WA0000.jpg"),
-          description: "خلصت سريرى مترتب ",
+          description: "خلصت... سريرى مترتب ",
           audio: require("../../maharat/ترتيب_السرير/4/AUD-20240421-WA0011.mp3"),
         },
       ];
