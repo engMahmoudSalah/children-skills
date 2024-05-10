@@ -26,13 +26,13 @@ const M2 = ({tab}) => {
         {
           title: '4',
           img: require("../../maharat/غسيل_الاسنان/4/4.jpg"),
-          description: " احط المعجون علي فرشة الاسنان ",
+          description: " احط المعجون على فرشة الاسنان ",
           audio: require("../../maharat/غسيل_الاسنان/4/AUD-20240421-WA0015.mp3"),
         },
         {
           title: '5',
           img: require("../../maharat/غسيل_الاسنان/5/5.jpg"),
-          description: " احط فرشة الاسنان علي سناني ",
+          description: " احط فرشة الاسنان على سناني ",
           audio: require("../../maharat/غسيل_الاسنان/5/AUD-20240421-WA0016.mp3"),
         },
         {
@@ -44,14 +44,14 @@ const M2 = ({tab}) => {
         {
           title: '7',
           img: require("../../maharat/غسيل_الاسنان/7/7.jpg"),
-          description: " اغسل بوئي من المعجون ",
+          description: " اغسل بؤي من المعجون ",
           audio: require("../../maharat/غسيل_الاسنان/7/AUD-20240421-WA0018.mp3"),
         },
 
         {
           title: '8',
           img: require("../../maharat/غسيل_الاسنان/plus7/plus7.jpg"),
-          description: " انشف بوءي ",
+          description: " انشف بؤي ",
           audio: require("../../maharat/غسيل_الاسنان/plus7/plus7.mp3"),
         },
 

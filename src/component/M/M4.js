@@ -62,13 +62,13 @@ const M4 = ({tab}) => {
         {
           title: '10',
           img: require("../../maharat/دخول_الحمام/10/10.jpg"),
-          description: "ادوس علي السيفون",
+          description: "ادوس على السيفون",
           audio: require("../../maharat/دخول_الحمام/10/10.mp3"),
         },
         {
           title: '11',
           img: require("../../maharat/دخول_الحمام/11/11.jpg"),
-          description:"اغسل ايدي بالمياه و الصابون",
+          description:"اغسل ايدي بالمايه و الصابون",
           audio: require("../../maharat/دخول_الحمام/11/11.mp3"),
         },
         {

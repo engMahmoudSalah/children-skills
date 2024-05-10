@@ -45,7 +45,7 @@ const M8 = ({tab}) => {
         {
           title: '7',
           img: require("../../maharat/الاكل/6/6.jpg"),
-          description: " هحط الطبق في الحوض ",
+          description: " احط الطبق في الحوض ",
           audio: require("../../maharat/الاكل/6/6.mp3"),
         },
       ];

@@ -15,12 +15,16 @@ const Footer = () => {
             <h4 className="h4"> من نحن </h4>
             <div className="list-unstyled1">
               <p style={{direction:'ltr'}} className="p">
-              : طلاب كلية علوم ذوي الإعاقة والتأهيل جامعة الزقازيق
+              :  كلية علوم ذوي الإعاقة والتأهيل قسم اضطراب التوحد
               </p>
 
-              <p className="p"> الاخصائيه/ مريم سالم {"  "}  . , .  {"  "} الاخصائيه/ الاء زكي</p>
-              <p className="p"> الاخصائيه/ رنا {"  "}  . , .  {"  "} الاخصائيه/ شيماء</p>
-              <p className="p"> الاخصائيه/ اية عماد {"  "}  . , .  {"  "} الاخصائيه/ الاء</p>
+              <p className="p"> الاخصائية / الشيماء شرقاوي محمد</p>
+              <p className="p"> الاخصائية / الاء محمد فتحي محمد</p>
+              <p className="p"> الاخصائية / مريم السيد سالم</p>
+              <p className="p"> الاخصائية / اية عماد السيد</p>
+              <p className="p"> الاخصائية / رهاد جمال محمد</p>
+              <p className="p"> الاخصائية / الاء رضا زكي</p>
+              
               
             </div>
           </div>
@@ -73,7 +77,7 @@ const Footer = () => {
               <div className="row">
                 <div className="col-md-12">
                   <p className="text-center">
-                    &copy; 2024 Faculty Of Science. All Rights Reserved.
+                    &copy; 2024 كلية علوم ذوي الإعاقة والتأهيل. All Rights Reserved.
                   </p>
                 </div>
               </div>

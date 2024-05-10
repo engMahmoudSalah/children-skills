@@ -76,7 +76,7 @@ const M7 = ({tab}) => {
         {
           title: '11',
           img: require("../../maharat/الاستحمام/7/7.jpg"),
-          description:" اغسل جسمي بالمياه",
+          description:" اغسل جسمي بالمايه",
           audio: require("../../maharat/الاستحمام/7/AUD-20240421-WA0052.mp3"),
         },
         {
@@ -88,13 +88,13 @@ const M7 = ({tab}) => {
         {
           title: "13",
           img: require("../../maharat/الاستحمام/9/9.jpg"),
-          description: "انش نفسي",
+          description: "أنشف نفسي",
           audio: require("../../maharat/الاستحمام/9/AUD-20240421-WA0054.mp3"),
         },
         {
           title: '14',
           img: require("../../maharat/الاستحمام/10/10.jpg"),
-          description: "البس البرنس",
+          description: "البس البرنص",
           audio: require("../../maharat/الاستحمام/10/AUD-20240421-WA0055.mp3"),
         },
         {

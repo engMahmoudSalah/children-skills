@@ -28,7 +28,7 @@ const M5 = ({tab}) => {
         {
           title: '4',
           img: require("../../maharat/لبس_التيشرت/3/3.jpg"),
-          description:"ادخل دراعي تاني في الكم",
+          description:"ادخل دراعي التاني في الكم",
           audio: require("../../maharat/لبس_التيشرت/3/AUD-20240421-WA0036.mp3"),
         },
         {
