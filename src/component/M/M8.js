@@ -8,19 +8,19 @@ const M8 = ({tab}) => {
       {
         title: '1',
         img: require("../../maharat/الاكل/0/0.jpg"),
-        description: "اجيب الاكل من المطبخ",
+        description: "أجيب الاكل من المطبخ",
         audio: require("../../maharat/الاكل/0/0.mp3"),
       },
         {
           title: "2",
           img: require("../../maharat/الاكل/1/1.jpg"),
-          description: "احط الاكل قدامي",
+          description: "أحط الاكل قدامي",
           audio: require("../../maharat/الاكل/1/AUD-20240421-WA0022.mp3"),
         },
         {
           title: '3',
           img: require("../../maharat/الاكل/2/2.jpg"),
-          description: "امسك المعلقة",
+          description: "أمسك المعلقة",
           audio: require("../../maharat/الاكل/2/AUD-20240421-WA0023.mp3"),
         },
         {
@@ -38,14 +38,14 @@ const M8 = ({tab}) => {
         {
           title: '6',
           img: require("../../maharat/الاكل/5/5.jpg"),
-          description: "اشيل الطبق",
+          description: "أشيل الطبق",
           audio: require("../../maharat/الاكل/5/AUD-20240421-WA0026.mp3"),
         },
 
         {
           title: '7',
           img: require("../../maharat/الاكل/6/6.jpg"),
-          description: " احط الطبق في الحوض ",
+          description: " أحط الطبق في الحوض ",
           audio: require("../../maharat/الاكل/6/6.mp3"),
         },
       ];

@@ -31,16 +31,16 @@ const Footer = () => {
           <div className="col-md-4">
             <h4 className="h4"> اتصل بنا </h4>
             <div className="list-unstyled1">
-              <li  className="li">
+              {/* <li  className="li">
                 <i className="fa fa-envelope i"></i> science@zu.edu.eg
               </li>
               <li style={{direction:'ltr'}} className="li">
               055 2303252{" "}
                  <i className="fa fa-phone i"></i>
-              </li>
+              </li> */}
               <li className="li">
-                <i className="fa fa-map-marker i"></i> Zagazig university,
-                Egypt
+                <i className="fa fa-map-marker i"></i>  جامعة الزقازيق ,
+                مصر
               </li>
             </div>
           </div>
@@ -48,7 +48,7 @@ const Footer = () => {
             <h4 className="h4"> تابعنا</h4>
             <div className="list-unstyled2">
               <li className="li">
-                <a href="https://www.facebook.com/profile.php?id=100054362658684&locale=ar_AR">
+                <a href="https://www.facebook.com/groups/706464223561493/?ref=share&mibextid=NSMWBT">
                   <i className="fa fa-facebook i"></i>
                 </a>
               </li>

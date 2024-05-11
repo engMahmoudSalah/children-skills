@@ -47,7 +47,7 @@ const M7 = ({tab}) => {
         {
           title: "7",
           img: require("../../maharat/الاستحمام/plus5-1/plus5-1.jpg"),
-          description: "أحط الشامبو علي شعري",
+          description: "أحط الشامبو على شعري",
           audio: require("../../maharat/الاستحمام/plus5-1/plus5-1.mp3"),
         },
 
@@ -61,7 +61,7 @@ const M7 = ({tab}) => {
         {
           title: "9",
           img: require("../../maharat/الاستحمام/plus5-3/plus5-3.jpg"),
-          description: "أحط الصابون علي الليفة",
+          description: "أحط الصابون على الليفة",
           audio: require("../../maharat/الاستحمام/plus5-3/plus5-3.mp3"),
         },
 

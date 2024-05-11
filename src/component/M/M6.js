@@ -9,13 +9,13 @@ const M6 = ({tab}) => {
           title: "1",
           img: require("../../maharat/لبس_الشراب/0/0.jpg"),
           description: "أفتح درج الشرابات",
-          audio: require("../../maharat/لبس_الشراب/1/AUD-20240421-WA0027.mp3"),
+          audio: require("../../maharat/لبس_الشراب/0/AUD-20240421-WA0027.mp3"),
         },
         {
           title: "2",
           img: require("../../maharat/لبس_الشراب/1/1.jpg"),
           description: "أجيب الشراب",
-          audio: require("../../maharat/لبس_الشراب/1/AUD-20240421-WA0027.mp3"),
+          audio: require("../../maharat/لبس_الشراب/1/AUD-20240511-WA0006.mp3"),
         },
         {
           title: '3',
