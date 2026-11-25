@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./videosTabs.css";
 import M1 from "../M/M1";
 import M2 from "../M/M2";
@@ -10,172 +10,114 @@ import M7 from "../M/M7";
 import M8 from "../M/M8";
 import M9 from "../M/M9";
 
-const VideosTabs = () => {
-  const [activeTab, setActiveTab] = useState("tab1");
+const SKILLS = [
+  { id: "tab1", title: "ترتيب السرير", Comp: M1 },
+  { id: "tab2", title: "غسيل الاسنان", Comp: M2 },
+  { id: "tab3", title: "تسريح الشعر", Comp: M3 },
+  { id: "tab4", title: "دخول الحمام", Comp: M4 },
+  { id: "tab5", title: "لبس التيشيرت و البنطلون", Comp: M5 },
+  { id: "tab6", title: "لبس الشراب و الجزمة", Comp: M6 },
+  { id: "tab7", title: "الاستحمام", Comp: M7 },
+  { id: "tab8", title: "الاكل", Comp: M8 },
+  { id: "tab9", title: "مسح الانف", Comp: M9 },
+];
+const KEY = "cs_done_v1";
 
-  const openTab = (tabName) => {
-    setActiveTab(tabName);
+const readDone = () => {
+  try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; }
+};
+
+const VideosTabs = () => {
+  const fromHash = () => {
+    const h = window.location.hash.replace("#", "");
+    return SKILLS.some((s) => s.id === h) ? h : "tab1";
+  };
+  const [activeTab, setActiveTab] = useState(fromHash);
+  const [done, setDone] = useState(readDone);
+
+  const openTab = useCallback((id) => {
+    setActiveTab(id);
+    try { window.history.replaceState(null, "", "#" + id); } catch { /* ignore */ }
+  }, []);
+
+  useEffect(() => {
+    const onHash = () => setActiveTab(fromHash());
+    window.addEventListener("hashchange", onHash);
+    return () => window.removeEventListener("hashchange", onHash);
+  }, []);
+
+  const toggleDone = (id) => {
+    const next = { ...done, [id]: !done[id] };
+    setDone(next);
+    try { localStorage.setItem(KEY, JSON.stringify(next)); } catch { /* ignore */ }
   };
 
+  const onKey = (e, index) => {
+    const last = SKILLS.length - 1;
+    let to = null;
+    if (e.key === "ArrowDown" || e.key === "ArrowLeft") to = index === last ? 0 : index + 1;
+    if (e.key === "ArrowUp" || e.key === "ArrowRight") to = index === 0 ? last : index - 1;
+    if (e.key === "Home") to = 0;
+    if (e.key === "End") to = last;
+    if (to === null) return;
+    e.preventDefault();
+    openTab(SKILLS[to].id);
+    const el = document.getElementById("tabbtn-" + SKILLS[to].id);
+    if (el) el.focus();
+  };
 
-  var tab1 = "ترتيب السرير";
-  var tab2 = "غسيل الاسنان ";
-  var tab3 = " تسريح الشعر ";
-  var tab4 = " دخول الحمام ";
-  var tab5 = " لبس التيشيرت و البنطلون ";
-  var tab6 = " لبس الشراب و الجزمة ";
-  var tab7 = " الاستحمام ";
-  var tab8 = " الاكل ";
-  var tab9 = " مسح الانف ";
+  const count = SKILLS.filter((s) => done[s.id]).length;
+  const pct = Math.round((count / SKILLS.length) * 100);
 
   return (
-    <div  className="VideosTabs">
-      <div data-aos="fade-left"
-      data-aos-duration="1000"
-      data-aos-delay="100" className="d-tabs">
-        <div className="tabs" id="myTabs">
-          <div
-            className={`tab ${activeTab === "tab1" ? "active" : ""}`}
-            onClick={() => openTab("tab1")}
-          >
-            {tab1}
+    <div className="VideosTabs">
+      <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100" className="d-tabs">
+        <div className="tabs" id="myTabs" role="tablist" aria-orientation="vertical" aria-label="مهارات رعاية الذات">
+          <div className="progress" aria-live="polite">
+            <div className="progress-text">تم إتقان {count} من {SKILLS.length}</div>
+            <div className="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow={pct}>
+              <span style={{ width: pct + "%" }} />
+            </div>
           </div>
-          <div
-            className={`tab ${activeTab === "tab2" ? "active" : ""}`}
-            onClick={() => openTab("tab2")}
-          >
-            {tab2}
-          </div>
-
-
-          <div
-            className={`tab ${activeTab === "tab3" ? "active" : ""}`}
-            onClick={() => openTab("tab3")}
-          >
-            {tab3}
-          </div>
-
-
-          <div
-            className={`tab ${activeTab === "tab4" ? "active" : ""}`}
-            onClick={() => openTab("tab4")}
-          >
-            {tab4}
-          </div>
-
-          <div
-            className={`tab ${activeTab === "tab5" ? "active" : ""}`}
-            onClick={() => openTab("tab5")}
-          >
-            {tab5}
-          </div>
-
-          <div
-            className={`tab ${activeTab === "tab6" ? "active" : ""}`}
-            onClick={() => openTab("tab6")}
-          >
-            {tab6}
-          </div>
-
-          <div
-            className={`tab ${activeTab === "tab7" ? "active" : ""}`}
-            onClick={() => openTab("tab7")}
-          >
-            {tab7}
-          </div>
-
-          <div
-            className={`tab ${activeTab === "tab8" ? "active" : ""}`}
-            onClick={() => openTab("tab8")}
-          >
-            {tab8}
-          </div>
-
-          <div
-            className={`tab ${activeTab === "tab9" ? "active" : ""}`}
-            onClick={() => openTab("tab9")}
-          >
-            {tab9}
-          </div>
+          {SKILLS.map((s, i) => (
+            <button
+              type="button"
+              key={s.id}
+              id={"tabbtn-" + s.id}
+              role="tab"
+              aria-selected={activeTab === s.id}
+              aria-controls={"panel-" + s.id}
+              tabIndex={activeTab === s.id ? 0 : -1}
+              className={`tab ${activeTab === s.id ? "active" : ""} ${done[s.id] ? "is-done" : ""}`}
+              onClick={() => openTab(s.id)}
+              onKeyDown={(e) => onKey(e, i)}
+            >
+              {done[s.id] ? "✓ " : ""}{s.title}
+            </button>
+          ))}
         </div>
       </div>
 
-      {/* ================================/ content /============================================ */}
-
-      <div data-aos="fade-up"
-      data-aos-duration="1000"
-      data-aos-delay="200"
-        className={`tab-content ${activeTab === "tab1" ? "active" : ""}`}
-        id="tab1Content"
-      >
-        <M1 tab={tab1} />
-      </div>
-
-      {/* tab 2 */}
-      <div
-        className={`tab-content ${activeTab === "tab2" ? "active" : ""}`}
-        id="tab2Content"
-      >
-        <M2 tab={tab2} />
-      </div>
-
-      {/* tab 3 */}
-      <div
-        className={`tab-content ${activeTab === "tab3" ? "active" : ""}`}
-        id="tab2Content"
-      >
-        <M3 tab={tab3} />
-      </div>
-
-      {/* tab 4 */}
-      <div
-        className={`tab-content ${activeTab === "tab4" ? "active" : ""}`}
-        id="tab2Content"
-      >
-        <M4 tab={tab4} />
-      </div>
-
-      {/* tab 5 */}
-      <div
-        className={`tab-content ${activeTab === "tab5" ? "active" : ""}`}
-        id="tab2Content"
-      >
-        <M5 tab={tab5} />
-      </div>
-
-      {/* tab 6 */}
-      <div
-        className={`tab-content ${activeTab === "tab6" ? "active" : ""}`}
-        id="tab2Content"
-      >
-        <M6 tab={tab6} />
-      </div>
-
-      {/* tab 7 */}
-      <div
-        className={`tab-content ${activeTab === "tab7" ? "active" : ""}`}
-        id="tab2Content"
-      >
-        <M7 tab={tab7} />
-      </div>
-
-      {/* tab 8 */}
-      <div
-        className={`tab-content ${activeTab === "tab8" ? "active" : ""}`}
-        id="tab2Content"
-      >
-        <M8 tab={tab8} />
-      </div>
-
-      {/* tab 9 */}
-      <div
-        className={`tab-content ${activeTab === "tab9" ? "active" : ""}`}
-        id="tab2Content"
-      >
-        <M9 tab={tab9} />
-      </div>
+      {SKILLS.map((s) => (
+        <div
+          key={s.id}
+          className={`tab-content ${activeTab === s.id ? "active" : ""}`}
+          id={"panel-" + s.id}
+          role="tabpanel"
+          aria-labelledby={"tabbtn-" + s.id}
+          hidden={activeTab !== s.id}
+        >
+          {activeTab === s.id && (
+            <>
+              <s.Comp tab={" " + s.title + " "} />
+              <button type="button" className="done-btn" aria-pressed={!!done[s.id]} onClick={() => toggleDone(s.id)}>
+                {done[s.id] ? "✓ تم إتقان المهارة (اضغط للتراجع)" : "تم إتقان هذه المهارة"}
+              </button>
+            </>
+          )}
+        </div>
+      ))}
     </div>
   );
 };
-
 export default VideosTabs;

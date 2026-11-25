@@ -266,3 +266,15 @@ background-color: transparent;
     }
   }
   
+/* accessible tab buttons, progress and mastery toggle */
+.VideosTabs .tabs button.tab{ background: none; border: 0; border-bottom: 1px solid gray; font: inherit; text-align: center; width: 100%; }
+.VideosTabs .tabs button.tab:focus-visible, .VideosTabs .done-btn:focus-visible{ outline: 3px solid #2f7f86; outline-offset: 2px; }
+.VideosTabs .tab.is-done{ font-weight: 700; }
+.VideosTabs .progress{ padding: 4px 6px 0; }
+.VideosTabs .progress-text{ font-size: 0.9rem; color: var(--c22); margin-bottom: 6px; text-align: center; }
+.VideosTabs .progress-bar{ height: 8px; border-radius: 99px; background: rgba(120,120,120,.25); overflow: hidden; }
+.VideosTabs .progress-bar span{ display: block; height: 100%; background: #2f9e8f; transition: width .4s ease; }
+.VideosTabs .done-btn{ display: block; margin: 24px auto; padding: 12px 24px; font: inherit; font-weight: 700; border: 2px solid #2f9e8f; background: transparent; color: var(--wb); border-radius: 12px; cursor: pointer; }
+.VideosTabs .done-btn[aria-pressed="true"]{ background: #2f9e8f; color: #fff; }
+.VideosTabs .tab-content[hidden]{ display: none; }
+.VideosTabs .tabs button.tab{ line-height: 1.5; min-height: 48px; padding: 8px 12px; }
