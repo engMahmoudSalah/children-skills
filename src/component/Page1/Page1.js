@@ -25,7 +25,7 @@ const Page1 = () => {
       <Sec1/>
       <Sec2/>
       <Footer/>    
-      <a href="#sec1">
+      <a href="#sec1" aria-label="Back to top">
       <ToTop/>
       </a>  
 
