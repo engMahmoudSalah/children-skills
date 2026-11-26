@@ -295,3 +295,10 @@ background-color: transparent;
 }
 .cert-print{background:#0f766e;color:#fff;border:0;border-radius:999px;padding:10px 26px;font-weight:700;font-size:1rem;cursor:pointer}
 .cert-print:hover{background:#115e59}
+
+/* selected tab: soft teal instead of a solid black block; progress row full width, never clipped */
+.VideosTabs .d-tabs .tabs button.tab.active{ background: #d9f0ec; color: #134e4a; border-bottom: 3px solid #2f9e8f; font-weight: 700; }
+.VideosTabs .d-tabs .tabs button.tab:hover{ background: #e8f6f3; color: #134e4a; }
+.VideosTabs .tabs .progress{ flex: 1 1 100%; width: 100%; height: auto; min-height: 0; overflow: visible; padding: 8px 6px; box-sizing: border-box; }
+.VideosTabs .tabs .progress-text{ line-height: 1.6; white-space: normal; overflow: visible; }
+.VideosTabs .d-tabs .tabs button.tab{ height: auto; min-height: 56px; padding: 12px; display: flex; align-items: center; justify-content: center; line-height: 1.5; }
