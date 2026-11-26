@@ -309,3 +309,4 @@ background-color: transparent;
 .VideosTabs .next-btn:hover, .VideosTabs .next-btn:focus-visible{ background: #d9f0ec; }
 .dark-theme-variables .VideosTabs .next-btn{ color: #e5f4f1; border-color: #5fc7b8; }
 .dark-theme-variables .VideosTabs .next-btn:hover{ background: rgba(95,199,184,.15); }
+.VideosTabs .tab-content button.done-btn, .VideosTabs .tab-content button.next-btn{ height: auto; min-height: 48px; line-height: 1.6; max-width: min(92%, 420px); white-space: normal; overflow: visible; box-sizing: border-box; }
