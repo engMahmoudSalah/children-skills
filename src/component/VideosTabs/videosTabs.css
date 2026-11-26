@@ -304,3 +304,8 @@ background-color: transparent;
 .VideosTabs .d-tabs .tabs button.tab{ height: auto; min-height: 56px; padding: 12px; display: flex; align-items: center; justify-content: center; line-height: 1.5; }
 .dark-theme-variables .VideosTabs .tabs .progress, .dark-theme-variables .VideosTabs .d-tabs .tabs .progress{ background: rgba(255,255,255,.07); border-radius: 12px; }
 .dark-theme-variables .VideosTabs .tabs .progress-text{ color: #e5f4f1; }
+
+.VideosTabs .next-btn{ display:block; margin: 10px auto 24px; padding: 12px 22px; border-radius: 14px; border: 2px solid #2f9e8f; background: transparent; color: #134e4a; font: inherit; font-weight: 700; cursor: pointer; }
+.VideosTabs .next-btn:hover, .VideosTabs .next-btn:focus-visible{ background: #d9f0ec; }
+.dark-theme-variables .VideosTabs .next-btn{ color: #e5f4f1; border-color: #5fc7b8; }
+.dark-theme-variables .VideosTabs .next-btn:hover{ background: rgba(95,199,184,.15); }

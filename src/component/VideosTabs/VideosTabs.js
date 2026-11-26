@@ -136,6 +136,11 @@ const VideosTabs = () => {
               <button type="button" className="done-btn" aria-pressed={!!done[s.id]} onClick={() => toggleDone(s.id)}>
                 {done[s.id] ? "✓ تم إتقان المهارة (اضغط للتراجع)" : "تم إتقان هذه المهارة"}
               </button>
+              {done[s.id] && SKILLS.indexOf(s) < SKILLS.length - 1 && (
+                <button type="button" className="next-btn" onClick={() => { openTab(SKILLS[SKILLS.indexOf(s) + 1].id); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
+                  المهارة التالية: {SKILLS[SKILLS.indexOf(s) + 1].title}
+                </button>
+              )}
             </>
           )}
         </div>
