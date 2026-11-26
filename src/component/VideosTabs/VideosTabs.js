@@ -22,6 +22,7 @@ const SKILLS = [
   { id: "tab9", title: "مسح الانف", Comp: M9 },
 ];
 const KEY = "cs_done_v1";
+const NKEY = "cs_name_v1";
 
 const readDone = () => {
   try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; }
@@ -34,6 +35,9 @@ const VideosTabs = () => {
   };
   const [activeTab, setActiveTab] = useState(fromHash);
   const [done, setDone] = useState(readDone);
+  const [kid, setKid] = useState(() => { try { return localStorage.getItem(NKEY) || ""; } catch { return ""; } });
+  const saveKid = (v) => { setKid(v); try { localStorage.setItem(NKEY, v); } catch { /* ignore */ } };
+  const resetAll = () => { if (window.confirm("هل تريد مسح التقدم والبدء من جديد؟")) { setDone({}); try { localStorage.removeItem(KEY); } catch { /* ignore */ } } };
 
   const openTab = useCallback((id) => {
     setActiveTab(id);
@@ -79,6 +83,9 @@ const VideosTabs = () => {
               <span style={{ width: pct + "%" }} />
             </div>
           </div>
+          {count > 0 && (
+            <button type="button" className="reset-btn" onClick={resetAll}>مسح التقدم</button>
+          )}
           {SKILLS.map((s, i) => (
             <button
               type="button"
@@ -97,6 +104,22 @@ const VideosTabs = () => {
           ))}
         </div>
       </div>
+
+      {count === SKILLS.length && (
+        <div className="cert-wrap">
+          <div className="cert" id="cs-cert" role="region" aria-label="شهادة إتقان">
+            <div className="cert-star" aria-hidden="true">★</div>
+            <h3>شهادة إتقان مهارات رعاية الذات</h3>
+            <p>تشهد هذه الشهادة بأن البطل</p>
+            <p className="cert-name">{kid || "............"}</p>
+            <p>أتقن المهارات التسع كاملة. أحسنت!</p>
+          </div>
+          <label className="cert-label">اسم الطفل
+            <input value={kid} onChange={(e) => saveKid(e.target.value.slice(0, 40))} maxLength={40} placeholder="اكتب الاسم هنا" />
+          </label>
+          <button type="button" className="cert-print" onClick={() => window.print()}>طباعة الشهادة</button>
+        </div>
+      )}
 
       {SKILLS.map((s) => (
         <div
