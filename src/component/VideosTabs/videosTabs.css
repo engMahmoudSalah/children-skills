@@ -302,3 +302,5 @@ background-color: transparent;
 .VideosTabs .tabs .progress{ flex: 1 1 100%; width: 100%; height: auto; min-height: 0; overflow: visible; padding: 8px 6px; box-sizing: border-box; }
 .VideosTabs .tabs .progress-text{ line-height: 1.6; white-space: normal; overflow: visible; }
 .VideosTabs .d-tabs .tabs button.tab{ height: auto; min-height: 56px; padding: 12px; display: flex; align-items: center; justify-content: center; line-height: 1.5; }
+.dark-theme-variables .VideosTabs .tabs .progress, .dark-theme-variables .VideosTabs .d-tabs .tabs .progress{ background: rgba(255,255,255,.07); border-radius: 12px; }
+.dark-theme-variables .VideosTabs .tabs .progress-text{ color: #e5f4f1; }
