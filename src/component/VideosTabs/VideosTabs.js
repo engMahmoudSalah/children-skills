@@ -25,7 +25,13 @@ const KEY = "cs_done_v1";
 const NKEY = "cs_name_v1";
 
 const readDone = () => {
-  try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; }
+  try {
+    const v = JSON.parse(localStorage.getItem(KEY));
+    if (!v || typeof v !== "object" || Array.isArray(v)) return {};
+    const out = {};
+    Object.keys(v).slice(0, 500).forEach((k) => { if (v[k] === true) out[k] = true; });
+    return out;
+  } catch { return {}; }
 };
 
 const VideosTabs = () => {
