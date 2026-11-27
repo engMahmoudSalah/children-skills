@@ -33,7 +33,7 @@ function App() {
 
   return (
     <>
-      <div className="bg">
+      <div className="bg" role="main">
         <BrowserRouter>
           
           <Routes>
