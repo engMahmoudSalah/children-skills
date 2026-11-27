@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://children-skills.mahmodsalah.workers.dev/sitemap.xml
