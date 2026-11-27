@@ -63,9 +63,9 @@ const Footer = () => {
                 </a>
               </li> */}
               <li className="li">
-                <img className="img" height={90} src={img1} />
+                <img className="img" height={90} src={img1} alt="جامعة الزقازيق" />
                 &nbsp;&nbsp;
-                <img className="img" height={90} src={img2} />
+                <img className="img" height={90} src={img2} alt="كلية علوم ذوي الإعاقة والتأهيل" />
               </li>
             </div>
           </div>

@@ -17,9 +17,9 @@ function NavScrollExample() {
     <div className="bg-body-trasparent">
         
         <div className="d-logo">
-          <img height={50} src={img1} />
+          <img height={50} src={img1} alt="جامعة الزقازيق" />
           &nbsp;&nbsp;
-          <img height={50} src={img2} />
+          <img height={50} src={img2} alt="كلية علوم ذوي الإعاقة والتأهيل" />
         </div>
 
         <div className="d-dark-btn">
